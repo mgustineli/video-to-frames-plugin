@@ -1,0 +1,11 @@
+name: "@mgustineli/video-to-frames"
+type: plugin
+author: Murilo Gustineli
+version: 1.0.0
+url: https://github.com/mgustineli/video-to-frames-plugin
+license: MIT
+description: Convert a video dataset into a frames view (one image per frame) with a custom frame rate and size
+fiftyone:
+  version: ">=1.0.0"
+operators:
+  - convert_to_frames
