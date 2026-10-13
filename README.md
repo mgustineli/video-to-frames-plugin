@@ -4,6 +4,8 @@ A [FiftyOne](https://github.com/voxel51/fiftyone) plugin that converts a video d
 
 The frames view lives on the same dataset as your videos. Label edits made on frames are synced back to the videos, so you don't need a separate image dataset.
 
+![gif](video-to-frames-plugin.gif)
+
 ## Installation
 
 ```shell
