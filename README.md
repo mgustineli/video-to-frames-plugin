@@ -10,6 +10,23 @@ The frames view lives on the same dataset as your videos. Label edits made on fr
 fiftyone plugins download https://github.com/mgustineli/video-to-frames-plugin
 ```
 
+### FiftyOne Enterprise
+
+Plugins are installed on the deployment by an admin:
+
+1. Download the repo as a zip: [video-to-frames-plugin-main.zip](https://github.com/mgustineli/video-to-frames-plugin/archive/refs/heads/main.zip)
+2. In the App, go to **Settings → Plugins → Install plugin** and upload the zip
+
+Or with the SDK, as an admin:
+
+```python
+import fiftyone.management as fom
+
+fom.upload_plugin("video-to-frames-plugin-main.zip", overwrite=True)
+```
+
+Background (delegated) runs need a delegated operator orchestrator on the deployment. Without one, choose **Execute now** when running the operator.
+
 ## Usage
 
 1. Open a **video dataset** in the App
